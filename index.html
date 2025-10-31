@@ -82,8 +82,8 @@
             text-decoration: underline;
         }
 
-        ul {
-            padding-left: 20px;
+        ul, ol {
+            padding-left: 25px;
         }
 
         li {
@@ -103,7 +103,7 @@
             border-radius: 8px;
         }
         
-        .highlight-box p {
+        .highlight-box p, .highlight-box li {
             margin: 0;
             font-size: 0.95em;
         }
@@ -112,16 +112,26 @@
             color: var(--highlight-border);
         }
 
+        .data-section {
+            background-color: #f9f9f9;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .data-section h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
         @media (max-width: 768px) {
             .container {
                 margin: 20px;
                 padding: 20px;
             }
-
             h1 {
                 font-size: 1.8em;
             }
-
             h2 {
                 font-size: 1.3em;
             }
@@ -148,13 +158,11 @@
         
         <section>
             <h2>1. Information We Collect</h2>
-            
             <h3>a) Information You Provide to Us</h3>
             <ul>
-                <li><strong>Account & Profile Information:</strong> When you create an account, we collect your <strong>phone number</strong> for verification. To build your profile, you may voluntarily provide your <strong>name, age, email address, a short biography,</strong> and <strong>photos</strong>.</li>
+                <li><strong>Account & Profile Information:</strong> When you create an account, we collect your <strong>phone number</strong> for verification. To build your profile, you may voluntarily provide your <strong>name, birth date, email address, a short biography,</strong> and <strong>photos</strong>.</li>
                 <li><strong>User Content:</strong> We collect any additional information you provide as part of your profile or interactions.</li>
             </ul>
-
             <h3>b) Information We Collect Automatically</h3>
             <ul>
                 <li><strong>Proximity & Connection Data:</strong> As described above, we use Bluetooth signals to detect nearby users. When a connection is made, we store an encrypted record of this interaction, linking the user identifiers, the time, and the status of the connection.</li>
@@ -165,31 +173,14 @@
         </section>
 
         <section>
-            <h2>2. How We Use Your Information & Legal Basis</h2>
-            <p>We process your data for the purposes below, based on the following legal grounds:</p>
-            
-            <h3>To Provide Our Service to You (Performance of a Contract):</h3>
+            <h2>2. How We Use Your Information</h2>
+            <p>We process your data to provide and improve our services. This includes using your information to:</p>
             <ul>
                 <li>Create and manage your account and profile.</li>
                 <li>Enable the core proximity-based discovery and connection features.</li>
                 <li>Display your profile to other nearby users.</li>
-            </ul>
-
-            <h3>For Our Legitimate Interests:</h3>
-            <ul>
-                <li>To improve our App and develop new features by analyzing user behavior.</li>
-                <li>To ensure the security of our platform and prevent fraudulent or unauthorized activity.</li>
-                <li>To perform diagnostics, fix bugs, and ensure the stability of the App.</li>
-            </ul>
-            
-            <h3>To Comply with a Legal Obligation:</h3>
-            <ul>
-                <li>We may process your information to comply with legal requirements, such as responding to lawful requests from law enforcement.</li>
-            </ul>
-
-            <h3>With Your Consent:</h3>
-            <ul>
-                <li>We may ask for your consent to send you push notifications. You can withdraw your consent at any time through your device's settings.</li>
+                <li>Ensure the security of our platform and prevent fraudulent activity.</li>
+                <li>Perform diagnostics, fix bugs, and improve the App's functionality.</li>
             </ul>
         </section>
 
@@ -197,59 +188,74 @@
             <h2>3. How We Share Your Information</h2>
             <ul>
                 <li><strong>With Other Users:</strong> You share information with other users when you voluntarily disclose information on the service (your public profile).</li>
-                <li><strong>With Our Service Providers and Partners:</strong> We rely on third-party companies and individuals to facilitate our service ("Service Providers"), to provide the service on our behalf, and to perform service-related analyses. These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose. These services include:
-                    <ul>
-                        <li>Data hosting and backend infrastructure for storing your profile and connection data.</li>
-                        <li>User authentication and security services to manage your account.</li>
-                        <li>Cloud storage for hosting user-uploaded photos.</li>
-                        <li>Analytics and performance monitoring to help us understand app usage and fix crashes.</li>
-                    </ul>
-                </li>
-                <li><strong>For Corporate Transactions:</strong> We may transfer your information if we are involved, whether in whole or in part, in a merger, sale, acquisition, or other restructuring.</li>
-                <li><strong>When Required by Law:</strong> We may disclose your information if reasonably necessary: (i) to comply with a legal process, such as a court order or subpoena; (ii) to assist in the prevention or detection of crime; or (iii) to protect the safety of any person.</li>
+                <li><strong>With Our Service Providers and Partners:</strong> We rely on third-party companies to facilitate our service ("Service Providers"). These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose. These services include data hosting, user authentication, cloud storage for photos, and analytics.</li>
+                <li><strong>For Corporate Transactions:</strong> We may transfer your information if we are involved in a merger, sale, acquisition, or other restructuring.</li>
+                <li><strong>When Required by Law:</strong> We may disclose your information if reasonably necessary to comply with a legal process, assist in the prevention of crime, or protect the safety of any person.</li>
             </ul>
         </section>
 
         <section>
-            <h2>4. Data Retention and Deletion</h2>
-            <p>We keep your personal information only as long as we need it for legitimate business purposes and as permitted by applicable law.</p>
-            <p>When you delete your account, we follow a safe deletion process to ensure your data is completely removed from our servers. The account deletion process begins immediately but may take a short time to complete. We may retain certain information in backups for a limited period for legal, security, or disaster-recovery purposes.</p>
-        </section>
-
-        <section>
-            <h2>5. Your Rights and Choices</h2>
+            <h2>4. Your Rights and Choices</h2>
             <p>We want you to be in control of your information. You have the following rights:</p>
             <ul>
                 <li><strong>Access / Portability:</strong> You can request a copy of the information we hold about you.</li>
                 <li><strong>Correction / Rectification:</strong> If you believe any information we hold about you is inaccurate, you can update it through your profile settings.</li>
-                <li><strong>Deletion / Erasure:</strong> You can delete your account at any time directly through the App.</li>
+                <li><strong>Deletion / Erasure:</strong> You can delete your account at any time directly through the App. See Section 10 for detailed instructions.</li>
                 <li><strong>Permissions:</strong> You can manage app permissions (Bluetooth, Notifications) in your device's system settings. Revoking permissions may cause the App's core features to stop working.</li>
             </ul>
         </section>
 
         <section>
-            <h2>6. Security of Your Information</h2>
-            <p>We work hard to protect you from unauthorized access to or alteration, disclosure, or destruction of your personal information. We use technical and administrative security measures, including encrypting data in transit and at rest, to safeguard your information. The identifier broadcasted via Bluetooth is encrypted to protect your identity.</p>
+            <h2>5. Security of Your Information</h2>
+            <p>We work hard to protect you from unauthorized access to or alteration, disclosure, or destruction of your personal information. We use technical and administrative security measures, including encrypting data in transit and at rest. The identifier broadcasted via Bluetooth is also encrypted to protect your identity.</p>
         </section>
 
         <section>
-            <h2>7. International Data Transfers</h2>
-            <p>Your information is collected, transferred, stored, and processed in the United States and other countries where our third-party service providers maintain facilities. These countries may have data protection laws that are different from the laws of your country.</p>
+            <h2>6. International Data Transfers</h2>
+            <p>Your information is collected, transferred, stored, and processed in various countries where our third-party service providers maintain facilities. These countries may have data protection laws that are different from the laws of your country.</p>
         </section>
 
         <section>
-            <h2>8. Children's Privacy</h2>
+            <h2>7. Children's Privacy</h2>
             <p>Our services are restricted to users who are 18 years of age or older. We do not permit users under the age of 18 on our platform. If you suspect a user is under 18, please use the reporting mechanism in the App.</p>
         </section>
 
         <section>
-            <h2>9. Changes to This Privacy Policy</h2>
+            <h2>8. Changes to This Privacy Policy</h2>
             <p>We may update this Privacy Policy from time to time. When we do, we will change the "Last Updated" date at the top of the policy. We encourage you to review this policy periodically.</p>
         </section>
         
         <section>
+            <h2 id="data-deletion">9. Account & Data Deletion Instructions</h2>
+            <p>You have the right to delete your Motify account and its associated data at any time. This page provides clear instructions on how to do so.</p>
+            <h3>How to Delete Your Account</h3>
+            <ol>
+                <li>Open the Motify app on your device.</li>
+                <li>Navigate to the <strong>Profile</strong> screen (tap the profile icon in the bottom navigation bar).</li>
+                <li>Tap the <strong>"Delete Account"</strong> button.</li>
+                <li>A confirmation prompt will appear. Confirm that you wish to permanently delete your account.</li>
+            </ol>
+            <div class="data-section">
+                <h3>What Happens to Your Data?</h3>
+                <p>When you delete your account, we are committed to removing your personal data from our systems. Here is what you can expect:</p>
+                <h4>Data that is Deleted:</h4>
+                <ul>
+                    <li>Your user account and authentication credentials.</li>
+                    <li>Your profile information, including your <strong>name, birth date, biography, and photos</strong>.</li>
+                    <li>Your unique User ID (<code>shortId</code>).</li>
+                    <li>All connection and session records where you were a participant.</li>
+                </ul>
+                <h4>Data Retention Period:</h4>
+                <ul>
+                    <li>The deletion process for your data from our live production systems is initiated immediately.</li>
+                    <li>Residual copies of your data may remain in our secure, encrypted backup systems for a limited period (typically up to 30 days) for disaster recovery purposes, after which they are also permanently deleted.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
             <h2>10. Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:motify2026@gmail.com">motify2026@gmail.com</a></p>
+            <p>If you have any questions about this Privacy Policy, or if you have trouble with the in-app deletion process, please contact us at: <a href="mailto:motify2026@gmail.com">motify2026@gmail.com</a></p>
         </section>
     </div>
 
