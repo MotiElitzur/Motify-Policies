@@ -44,6 +44,12 @@
             margin-bottom: 10px;
         }
 
+        .last-updated {
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
         h2 {
             color: var(--primary-color);
             font-size: 1.5em;
@@ -126,6 +132,7 @@
 
     <div class="container">
         <h1>Privacy Policy for Motify</h1>
+        <p class="last-updated">Last Updated: October 26, 2023</p>
 
         <p>Welcome to Motify! Your privacy is critically important to us. This Privacy Policy explains how Motify ("we," "us," or "our") collects, uses, shares, and protects your information when you use our mobile application, Motify (the "App").</p>
         <p>By using our App, you agree to the collection and use of information in accordance with this policy.</p>
@@ -135,10 +142,10 @@
             <p>To provide our service, we need to know when other users are near you. However, it is essential to understand how we achieve this:</p>
             <ul>
                 <li><strong>We DO NOT use or collect your device's GPS location.</strong> We do not track your movements, know your physical address, or store a history of where you have been.</li>
-                <li><strong>We use Bluetooth Low Energy (BLE) for Proximity Detection.</strong> The App uses your device's Bluetooth signal to detect the presence of other users nearby. Think of it like a digital "shout" that can only be "heard" by other devices running the App within a short range (e.g., in the same room or area). We record that an interaction occurred, but not <em>where</em> it occurred.</li>
+                <li><strong>We use Bluetooth Low Energy (BLE) for Proximity Detection.</strong> The App uses your device's Bluetooth signal to detect the presence of other users nearby. Think of it like a digital "shout" that can only be "heard" by other devices running the App within a short range. We record that an interaction occurred, but not <em>where</em> it occurred.</li>
             </ul>
-            <p><strong>Why does the Google Play Store mention 'Approximate Location'?</strong><br>
-            Google Play requires apps that use Bluetooth to scan for other devices to declare that they use "Approximate Location." This is because this technology can be used to infer that you are in the same general area as another user. We want to be transparent: our use is strictly for real-time proximity detection, not for mapping or tracking your location over time.</p>
+            <p><strong>A Note on App Store Permissions</strong><br>
+            App stores, such as the Google Play Store, may require us to state that our app uses "Approximate Location." This is because technologies like Bluetooth scanning can be used to infer that you are in the same general area as another user. We want to be transparent: our use is strictly for real-time proximity detection, not for mapping or tracking your location over time.</p>
         </div>
 
         <section>
@@ -152,9 +159,9 @@
 
             <h3>b) Information We Collect Automatically</h3>
             <ul>
-                <li><strong>Proximity & Connection Data:</strong> As described above, we use Bluetooth signals to detect nearby users. When a connection is made, we store an encrypted record of this interaction, linking the user identifiers, the time, and the status of the connection (e.g., liked, matched).</li>
+                <li><strong>Proximity & Connection Data:</strong> As described above, we use Bluetooth signals to detect nearby users. When a connection is made, we store an encrypted record of this interaction, linking the user identifiers, the time, and the status of the connection.</li>
                 <li><strong>Usage Information:</strong> We log activity on our services, including usage dates and times, features you’ve used, and how you interact with other users.</li>
-                <li><strong>Device Information:</strong> We collect information from and about the device(s) you use to access our App, including: hardware and software information such as device model, OS version, unique device identifiers (e.g., Firebase Installation ID), and Bluetooth settings.</li>
+                <li><strong>Device Information:</strong> We collect information from and about the device(s) you use to access our App, including: hardware and software information such as device model, OS version, unique device identifiers, and Bluetooth settings.</li>
                 <li><strong>Diagnostic & Log Data:</strong> We automatically collect log files and crash reports, which include technical data that helps us diagnose and fix issues with the App.</li>
             </ul>
         </section>
@@ -192,9 +199,12 @@
             <h2>3. How We Share Your Information</h2>
             <ul>
                 <li><strong>With Other Users:</strong> You share information with other users when you voluntarily disclose information on the service (your public profile).</li>
-                <li><strong>With Our Service Providers:</strong> We use third-party vendors to help us operate, secure, and analyze our App. These providers are bound by confidentiality obligations. Our primary service provider is:
+                <li><strong>With Our Service Providers and Partners:</strong> We rely on third-party companies and individuals to facilitate our service ("Service Providers"), to provide the service on our behalf, and to perform service-related analyses. These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose. These services include:
                     <ul>
-                        <li><strong>Google (Firebase):</strong> We use Firebase for backend infrastructure, including authentication, database (Cloud Firestore), backend processing (Cloud Functions), photo storage (Cloud Storage), and analytics.</li>
+                        <li>Data hosting and backend infrastructure for storing your profile and connection data.</li>
+                        <li>User authentication and security services to manage your account.</li>
+                        <li>Cloud storage for hosting user-uploaded photos.</li>
+                        <li>Analytics and performance monitoring to help us understand app usage and fix crashes.</li>
                     </ul>
                 </li>
                 <li><strong>For Corporate Transactions:</strong> We may transfer your information if we are involved, whether in whole or in part, in a merger, sale, acquisition, or other restructuring.</li>
@@ -226,7 +236,7 @@
 
         <section>
             <h2>7. International Data Transfers</h2>
-            <p>Your information is collected, transferred, stored, and processed in the United States and other countries where our third-party service providers (like Google Firebase) maintain facilities. These countries may have data protection laws that are different from the laws of your country.</p>
+            <p>Your information is collected, transferred, stored, and processed in the United States and other countries where our third-party service providers maintain facilities. These countries may have data protection laws that are different from the laws of your country.</p>
         </section>
 
         <section>
